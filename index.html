@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAG Maritime Management Services Corporation | Port Agency & Ship Management in Davao</title>
+    <link rel="canonical" href="https://aagmaritime.com/">
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="AAG Maritime Management Services Corporation provides professional port agency, ship management, diesel bunkering, cargo surveying, and customs brokerage services in Davao City, Philippines. Available 24/7 for all maritime needs.">
+    <meta name="theme-color" content="#0066FF">
     <meta name="keywords" content="maritime services, port agency, ship management, cargo surveying, customs brokerage, diesel bunkering, husbandry agent, ships brokerage, Davao City, Philippines, AAG Maritime">
     <meta name="author" content="AAG Maritime Management Services Corporation">
     <meta name="robots" content="index, follow">
@@ -18,14 +20,20 @@
     <meta property="og:url" content="https://aagmaritime.com/">
     <meta property="og:title" content="AAG Maritime Management Services Corporation">
     <meta property="og:description" content="Professional maritime services - Port agency, ship management, cargo surveying, and customs brokerage in Davao City, Philippines">
-    <meta property="og:image" content="https://i.ibb.co/kgqsCy4M/AAG-LOGO.jpg">
+    <meta property="og:image" content="https://aagmaritime.com/images/AAG-LOGO.jpg">
+    <meta property="og:image:alt" content="AAG Maritime Logo">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://aagmaritime.com/">
     <meta property="twitter:title" content="AAG Maritime Management Services Corporation">
     <meta property="twitter:description" content="Professional maritime services - Port agency, ship management, cargo surveying, and customs brokerage in Davao City, Philippines">
-    <meta property="twitter:image" content="https://i.ibb.co/kgqsCy4M/AAG-LOGO.jpg">
+    <meta property="twitter:image" content="https://aagmaritime.com/images/AAG-LOGO.jpg">
+    <meta property="twitter:image:alt" content="AAG Maritime Logo">
+
+    <!-- Key asset preloads (first paint) -->
+    <link rel="preload" as="image" href="images/AAG-LOGO.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="images/WhatsApp%20Image%202026-02-03%20at%202.46.46%20PM%20%286%29.jpeg" fetchpriority="high">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -207,7 +215,7 @@
         .hero {
             margin-top: 85px;
             min-height: 90vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.ibb.co/mCfB5Ckb/Whats-App-Image-2026-02-03-at-2-46-46-PM-6.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/WhatsApp%20Image%202026-02-03%20at%202.46.46%20PM%20%286%29.jpeg') center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1152,13 +1160,85 @@
             }
         }
     </style>
+
+    <!-- Structured data for rich results -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "AAG Maritime Management Services Corporation",
+          "url": "https://aagmaritime.com/",
+          "logo": "https://aagmaritime.com/images/AAG-LOGO.jpg",
+          "telephone": "+63822246130",
+          "email": "operations@aagmaritime.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Door 18 & 19, 2nd Floor, Tristar Bldg. Mamay Road, Brgy. Angliongto, Lanang",
+            "addressLocality": "Davao City",
+            "postalCode": "8000",
+            "addressCountry": "PH"
+          },
+          "knowsAbout": [
+            "Port agency",
+            "Ship management",
+            "Diesel bunkering",
+            "Cargo surveying",
+            "Customs brokerage",
+            "Ships brokerage"
+          ],
+          "makesOffer": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Port Agency"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Ship Management"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Diesel Bunkering"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Cargo Surveying"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Customs / Cargo Brokerage"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Ships Brokerage"
+              }
+            }
+          ]
+        }
+    </script>
 </head>
 <body>
     <!-- HEADER -->
     <header id="header">
         <nav>
             <a href="#" class="logo">
-                <img src="https://i.ibb.co/kgqsCy4M/AAG-LOGO.jpg" alt="AAG Maritime Logo" class="logo-image">
+          <img src="images/AAG-LOGO.jpg" alt="AAG Maritime Logo" class="logo-image" loading="eager" decoding="async" fetchpriority="high">
                 <span class="logo-text">AAG Maritime Management Services Corporation</span>
             </a>
             <ul class="nav-links">
@@ -1168,10 +1248,11 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <a href="#contact" class="cta-button">Get In Touch</a>
-            <button class="mobile-menu-btn">☰</button>
+            <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
         </nav>
     </header>
 
+    <main id="main-content">
     <!-- HERO SECTION -->
     <section class="hero" id="home">
         <div class="hero-content">
@@ -1198,16 +1279,16 @@
             </div>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                 <div class="about-image" style="height: 350px;">
-                    <img src="https://i.ibb.co/JXsH9cM/a6da7a29-1bc2-4fb3-950e-c6ccfac323cf.jpg" alt="Mining Shipping Operations" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="images/a6da7a29-1bc2-4fb3-950e-c6ccfac323cf.jpeg" alt="Mining Shipping Operations" loading="lazy" decoding="async" fetchpriority="low" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div class="about-image" style="height: 350px;">
-                    <img src="https://i.ibb.co/xKv2F6yG/b06e6eaa-4209-4822-8553-6a538720004e.jpg" alt="Bulk Carrier Operations" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="images/b06e6eaa-4209-4822-8553-6a538720004e.jpeg" alt="Bulk Carrier Operations" loading="lazy" decoding="async" fetchpriority="low" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div class="about-image" style="height: 350px;">
-                    <img src="https://i.ibb.co/XZGXDK08/631df8ff-096c-4de7-b995-6cc280846d04.jpg" alt="Maritime Mining Operations" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="images/631df8ff-096c-4de7-b995-6cc280846d04.jpeg" alt="Maritime Mining Operations" loading="lazy" decoding="async" fetchpriority="low" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div class="about-image" style="height: 350px;">
-                    <img src="https://i.ibb.co/pvxk28Hv/a3ab164a-05bb-4fcf-9e50-ec69dd175ae3.jpg" alt="Port Operations" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="images/a3ab164a-05bb-4fcf-9e50-ec69dd175ae3.jpeg" alt="Port Operations" loading="lazy" decoding="async" fetchpriority="low" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -1236,7 +1317,7 @@
             </p>
             <div class="principles-grid" style="display: flex; gap: 1.5rem; overflow-x: auto; padding-bottom: 1rem; justify-content: center; flex-wrap: wrap;">
                 <div class="principle-card" style="background: white; border-radius: 15px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; border-top: 4px solid #0066FF; min-width: 180px; max-width: 200px; flex: 0 0 auto; overflow: hidden;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 35px rgba(0, 102, 255, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.08)'">
-                    <img src="https://i.ibb.co/qMw4n0gb/Whats-App-Image-2026-02-03-at-2-46-46-PM-2.jpg" alt="Business Confidentiality" style="width: 100%; height: 120px; object-fit: cover;">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.46%20PM%20%282%29.jpeg" alt="Business Confidentiality" loading="lazy" decoding="async" fetchpriority="low" style="width: 100%; height: 120px; object-fit: cover;">
                     <div style="padding: 1.5rem;">
                         <div style="width: 50px; height: 50px; border-radius: 12px; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                             <span style="font-size: 1.8rem; font-weight: 700; color: white;">A</span>
@@ -1247,7 +1328,7 @@
                 </div>
                 
                 <div class="principle-card" style="background: white; border-radius: 15px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; border-top: 4px solid #00B4D8; min-width: 180px; max-width: 200px; flex: 0 0 auto; overflow: hidden;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 35px rgba(0, 102, 255, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.08)'">
-                    <img src="https://i.ibb.co/SXw9My3Z/84b8cd4c-910a-494d-8309-12fbc2dcf53d.jpg" alt="Commitment to Service" style="width: 100%; height: 120px; object-fit: cover;">
+                    <img src="images/b1be3141-32cd-49fa-b594-7963f73064cd.jpeg" alt="Commitment to Service" loading="lazy" decoding="async" fetchpriority="low" style="width: 100%; height: 120px; object-fit: cover;">
                     <div style="padding: 1.5rem;">
                         <div style="width: 50px; height: 50px; border-radius: 12px; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                             <span style="font-size: 1.8rem; font-weight: 700; color: white;">D</span>
@@ -1258,7 +1339,7 @@
                 </div>
                 
                 <div class="principle-card" style="background: white; border-radius: 15px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; border-top: 4px solid #4D94FF; min-width: 180px; max-width: 200px; flex: 0 0 auto; overflow: hidden;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 35px rgba(0, 102, 255, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.08)'">
-                    <img src="https://i.ibb.co/FTXgCWQ/Whats-App-Image-2026-02-03-at-2-46-46-PM-5.jpg" alt="Working Ethics" style="width: 100%; height: 120px; object-fit: cover;">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.46%20PM%20%285%29.jpeg" alt="Working Ethics" loading="lazy" decoding="async" fetchpriority="low" style="width: 100%; height: 120px; object-fit: cover;">
                     <div style="padding: 1.5rem;">
                         <div style="width: 50px; height: 50px; border-radius: 12px; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                             <span style="font-size: 1.8rem; font-weight: 700; color: white;">E</span>
@@ -1269,7 +1350,7 @@
                 </div>
                 
                 <div class="principle-card" style="background: white; border-radius: 15px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; border-top: 4px solid #0066FF; min-width: 180px; max-width: 200px; flex: 0 0 auto; overflow: hidden;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 35px rgba(0, 102, 255, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.08)'">
-                    <img src="https://i.ibb.co/prbVK2zQ/Whats-App-Image-2026-02-03-at-2-46-41-PM.jpg" alt="Professional Dealing" style="width: 100%; height: 120px; object-fit: cover;">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.41%20PM.jpeg" alt="Professional Dealing" loading="lazy" decoding="async" fetchpriority="low" style="width: 100%; height: 120px; object-fit: cover;">
                     <div style="padding: 1.5rem;">
                         <div style="width: 50px; height: 50px; border-radius: 12px; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                             <span style="font-size: 1.8rem; font-weight: 700; color: white;">P</span>
@@ -1280,7 +1361,7 @@
                 </div>
                 
                 <div class="principle-card" style="background: white; border-radius: 15px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; border-top: 4px solid #00B4D8; min-width: 180px; max-width: 200px; flex: 0 0 auto; overflow: hidden;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 35px rgba(0, 102, 255, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.08)'">
-                    <img src="https://i.ibb.co/JWb7Wd6W/Whats-App-Image-2026-02-03-at-2-46-42-PM-2.jpg" alt="Excellence" style="width: 100%; height: 120px; object-fit: cover;">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.42%20PM%20%282%29.jpeg" alt="Excellence" loading="lazy" decoding="async" fetchpriority="low" style="width: 100%; height: 120px; object-fit: cover;">
                     <div style="padding: 1.5rem;">
                         <div style="width: 50px; height: 50px; border-radius: 12px; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                             <span style="font-size: 1.8rem; font-weight: 700; color: white;">T</span>
@@ -1291,7 +1372,7 @@
                 </div>
                 
                 <div class="principle-card" style="background: white; border-radius: 15px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; border-top: 4px solid #4D94FF; min-width: 180px; max-width: 200px; flex: 0 0 auto; overflow: hidden;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 35px rgba(0, 102, 255, 0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.08)'">
-                    <img src="https://i.ibb.co/7xTrdfS9/Whats-App-Image-2026-02-03-at-2-46-42-PM-1.jpg" alt="Service Relationships" style="width: 100%; height: 120px; object-fit: cover;">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.42%20PM%20%281%29.jpeg" alt="Service Relationships" loading="lazy" decoding="async" fetchpriority="low" style="width: 100%; height: 120px; object-fit: cover;">
                     <div style="padding: 1.5rem;">
                         <div style="width: 50px; height: 50px; border-radius: 12px; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                             <span style="font-size: 1.8rem; font-weight: 700; color: white;">S</span>
@@ -1356,34 +1437,34 @@
             <p class="operations-subtitle">See our maritime excellence in action</p>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://i.ibb.co/jk74X7h7/Whats-App-Image-2026-02-03-at-2-46-44-PM.jpg" alt="Port Operations">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.44%20PM.jpeg" alt="Port Operations" loading="lazy" decoding="async" fetchpriority="low">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.ibb.co/GQV9fTRq/Whats-App-Image-2026-02-03-at-2-46-43-PM-2.jpg" alt="Maritime Operations">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.43%20PM%20%282%29.jpeg" alt="Maritime Operations" loading="lazy" decoding="async" fetchpriority="low">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.ibb.co/qMw4n0gb/Whats-App-Image-2026-02-03-at-2-46-46-PM-2.jpg" alt="Vessel Operations">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.46%20PM%20%282%29.jpeg" alt="Vessel Operations" loading="lazy" decoding="async" fetchpriority="low">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.ibb.co/BVLXZ1XB/Whats-App-Image-2026-02-03-at-2-46-46-PM-3.jpg" alt="Cargo Handling">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.46%20PM%20%283%29.jpeg" alt="Cargo Handling" loading="lazy" decoding="async" fetchpriority="low">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.ibb.co/SwqvJTwP/Whats-App-Image-2026-02-03-at-2-46-46-PM-4.jpg" alt="Ship Operations">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.46%20PM%20%284%29.jpeg" alt="Ship Operations" loading="lazy" decoding="async" fetchpriority="low">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.ibb.co/SXw9My3Z/84b8cd4c-910a-494d-8309-12fbc2dcf53d.jpg" alt="Maritime Services">
+                    <img src="images/b1be3141-32cd-49fa-b594-7963f73064cd.jpeg" alt="Maritime Services" loading="lazy" decoding="async" fetchpriority="low">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.ibb.co/7xTrdfS9/Whats-App-Image-2026-02-03-at-2-46-42-PM-1.jpg" alt="Port Services">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.42%20PM%20%281%29.jpeg" alt="Port Services" loading="lazy" decoding="async" fetchpriority="low">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.ibb.co/JWb7Wd6W/Whats-App-Image-2026-02-03-at-2-46-42-PM-2.jpg" alt="Operations Excellence">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.42%20PM%20%282%29.jpeg" alt="Operations Excellence" loading="lazy" decoding="async" fetchpriority="low">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.ibb.co/5hRjDTNf/Whats-App-Image-2026-02-03-at-2-46-42-PM-3.jpg" alt="Professional Operations">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.42%20PM%20%283%29.jpeg" alt="Professional Operations" loading="lazy" decoding="async" fetchpriority="low">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://i.ibb.co/DPBZbwLC/Whats-App-Image-2026-02-03-at-2-46-42-PM.jpg" alt="Maritime Excellence">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.42%20PM.jpeg" alt="Maritime Excellence" loading="lazy" decoding="async" fetchpriority="low">
                 </div>
             </div>
         </div>
@@ -1515,11 +1596,11 @@
             <h2>Connect With AAG Maritime</h2>
             <div class="contact-grid">
                 <div class="contact-image" style="height: 600px; overflow: hidden;">
-                    <img src="https://i.ibb.co/N2jPrjpc/Whats-App-Image-2026-02-03-at-2-46-43-PM-3.jpg" alt="Shipping Operations" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                    <img src="images/WhatsApp%20Image%202026-02-03%20at%202.46.43%20PM%20%283%29.jpeg" alt="Shipping Operations" loading="lazy" decoding="async" fetchpriority="low" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
                 </div>
                 <div class="contact-form-wrapper">
                     <!-- Success Message Banner -->
-                    <div id="success-banner" style="display: none; background: linear-gradient(135deg, #00B4D8, #0066FF); color: white; padding: 1.5rem 2rem; border-radius: 12px; margin-bottom: 1.5rem; text-align: center; animation: fadeInUp 0.5s ease;">
+                    <div id="success-banner" role="status" aria-live="polite" style="display: none; background: linear-gradient(135deg, #00B4D8, #0066FF); color: white; padding: 1.5rem 2rem; border-radius: 12px; margin-bottom: 1.5rem; text-align: center; animation: fadeInUp 0.5s ease;">
                         <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
                         <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.3rem;">Message Sent Successfully!</h3>
                         <p style="opacity: 0.95; font-size: 0.95rem;">Thank you for reaching out! Our team will get back to you within 24 hours.</p>
@@ -1528,22 +1609,22 @@
                     <form class="contact-form" id="contact-form" action="https://formspree.io/f/mdalznwe" method="POST">
                         <div class="form-row">
                             <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" name="name" required>
+                                <label for="name">Name</label>
+                                <input id="name" type="text" name="name" required>
                             </div>
                             <div class="form-group">
-                                <label>Email</label>
-                                <input type="email" name="email" required>
+                                <label for="email">Email</label>
+                                <input id="email" type="email" name="email" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label>Phone</label>
-                                <input type="tel" name="phone">
+                                <label for="phone">Phone</label>
+                                <input id="phone" type="tel" name="phone">
                             </div>
                             <div class="form-group">
-                                <label>Service Interested In</label>
-                                <select name="service">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
                                     <option value="">Select a service</option>
                                     <option value="husbandry">Husbandry Agent</option>
                                     <option value="management">Ship Management</option>
@@ -1556,12 +1637,12 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Message</label>
-                            <textarea name="message" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
                         </div>
                         <div class="checkbox-group">
-                            <label>
-                                <input type="checkbox" name="consent" required>
+                            <label for="consent">
+                                <input id="consent" type="checkbox" name="consent" required>
                                 <span>I agree to allow AAG Maritime to store and process my information to respond to this inquiry</span>
                             </label>
                         </div>
@@ -1609,12 +1690,14 @@
         </div>
     </section>
 
+    </main>
+
     <!-- MAIN FOOTER -->
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="https://i.ibb.co/kgqsCy4M/AAG-LOGO.jpg" alt="AAG Maritime Logo" class="footer-logo-img">
+                    <img src="images/AAG-LOGO.jpg" alt="AAG Maritime Logo" class="footer-logo-img" loading="eager" decoding="async" fetchpriority="high">
                 </div>
                 <p>AAG Maritime Management Services Corporation - Your trusted partner in comprehensive maritime solutions. Delivering excellence in shipping services since our establishment.</p>
             </div>
@@ -1667,6 +1750,18 @@
             }
         });
 
+        // Performance: default lazy-loading for images
+        // (keeps logos eager; everything else defaults to lazy + async decoding)
+        document.querySelectorAll('img').forEach((img) => {
+            const keepEager = img.classList.contains('logo-image') || img.classList.contains('footer-logo-img');
+            if (!img.hasAttribute('loading')) {
+                img.setAttribute('loading', keepEager ? 'eager' : 'lazy');
+            }
+            if (!img.hasAttribute('decoding')) {
+                img.setAttribute('decoding', 'async');
+            }
+        });
+
         // Mobile Menu Toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
@@ -1678,7 +1773,10 @@
                 ctaButton.classList.toggle('mobile-active');
                 
                 // Change icon
-                if (navLinks.classList.contains('mobile-active')) {
+                const isExpanded = navLinks.classList.contains('mobile-active');
+                mobileMenuBtn.setAttribute('aria-expanded', String(isExpanded));
+                mobileMenuBtn.setAttribute('aria-label', isExpanded ? 'Close menu' : 'Open menu');
+                if (isExpanded) {
                     mobileMenuBtn.textContent = '✕';
                 } else {
                     mobileMenuBtn.textContent = '☰';
@@ -1693,6 +1791,8 @@
                     navLinks.classList.remove('mobile-active');
                     ctaButton.classList.remove('mobile-active');
                     mobileMenuBtn.textContent = '☰';
+                    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    mobileMenuBtn.setAttribute('aria-label', 'Open menu');
                 }
             });
         });
@@ -1745,4 +1845,24 @@
                         
                         // Reset button
                         submitBtn.textContent = 'Send Message';
-                 
+                        submitBtn.disabled = false;
+                        submitBtn.style.opacity = '1';
+                    } else {
+                        // Server responded but not successful
+                        alert('Something went wrong. Please try again.');
+                        submitBtn.textContent = 'Send Message';
+                        submitBtn.disabled = false;
+                        submitBtn.style.opacity = '1';
+                    }
+                } catch (error) {
+                    // Network or unexpected error
+                    alert('Unable to send message right now. Please try again later.');
+                    submitBtn.textContent = 'Send Message';
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
